@@ -14,5 +14,5 @@ distancia_km = 10**18
 velocidad_luz_km_hora = 1.079*10**9
 distancia_horas = distancia_km/velocidad_luz_km_hora
 distancia_dias = distancia_horas/24
-distancia_anos = distancia_dias/364.25
+distancia_anos = distancia_dias/365.25
 print(distancia_anos)
