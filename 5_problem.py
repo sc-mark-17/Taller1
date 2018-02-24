@@ -8,6 +8,8 @@ Created on Sat Feb 17 23:54:07 2018
 
 
 n = int(input("Digite n: "))
+
+#Algoritmo 1
 i = 1
 cont = 0
 while i <= n:
@@ -15,3 +17,8 @@ while i <= n:
     i += 1
     
 print (cont)
+
+#Algoritmo 2
+a = ((n)*(n + 1)*((2*n) + 1))/6
+
+print(a)
