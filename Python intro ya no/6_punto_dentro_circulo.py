@@ -18,7 +18,7 @@ def pitagoras(x,y):
     h = math.sqrt(total)
     return h
 
-if pitagoras(x,y) <=1:
+if pitagoras(x,y) <= 1:
     print("El punto SI esta dentro del circulo")
 else:
     print("El punto NO esta dentro del circulo")

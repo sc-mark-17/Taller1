@@ -20,8 +20,6 @@ def aureos(a, b):
         dos = (a + b)/a
     return uno, dos
 
-listaOmbligo = []
-listaAltura = []
 i = 1
 prom1 = 0
 prom2 = 0
@@ -32,5 +30,5 @@ while i <= 5:
     prom1 = prom1 + p1aureo
     prom2 = prom2 + p2aureo
     i += 1
-print(prom1/5)
-print(prom2/5)
+print("Aproximación usando a/b: " + str(prom1/5))
+print("Aproximación usando (a + b)/a: " + str(prom2/5))

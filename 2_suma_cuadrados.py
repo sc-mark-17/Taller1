@@ -4,7 +4,7 @@ Created on Sat Feb 17 23:54:07 2018
 
 @author: maquina
 """
-#Escriba un programa que calcule la suma de 12+22+32...+n2
+#Escriba un programa que calcule la suma de 1^2+2^2+3^2...+n^2
 
 
 n = int(input("Digite n: "))
