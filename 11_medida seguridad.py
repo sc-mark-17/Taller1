@@ -7,32 +7,36 @@ Created on Tue Mar 13 01:49:27 2018
 
 import math
 s = input("Ingrese contraseña: ")
-#length of the password
+#tamaño del password
 L = len(s)
-#pool size of characters
+#minusculas normales
 #n = 27
-#Upper and lower case gives you n = 52  (5.7 bits)
+#mayusculas y minusculas n = 52  (5.7 bits)
 #n = 52
-#Upper and lower case, and numbers: n = 62  (5.95 bits)
+#Mayusculas, minusculas y numeros: n = 62  (5.95 bits)
 #n = 62
-#Using all keyboard characters: n = 94  (6.55 bits)
+#usando toddos los caracteres de l teclado n = 94  (6.55 bits)
 n = 94
 
 password_entropy = L * math.log2(n)
 
 print(password_entropy)
 
-def validate_password(passwd):
-    conditions_met = 0
+def validadorPassword(psswrd):
+    condiciones_cumplidas = 0
     #conditions_total = 3
-    if len(passwd) >= 6: 
-        if passwd.lower() != passwd: conditions_met += 1
-        if len([x for x in passwd if x.isdigit()]) > 0: conditions_met += 1
-        if len([x for x in passwd if not x.isalnum()]) > 0: conditions_met += 1
+    if len(psswrd) >= 6: 
+        if psswrd.lower() != psswrd: 
+        	condiciones_cumplidas += 1
+        if len([x for x in psswrd if x.isdigit()]) > 0: 
+        	condiciones_cumplidas += 1
+        if len([x for x in psswrd if not x.isalnum()]) > 0: 
+        	condiciones_cumplidas += 1
     result = False
-    print (conditions_met)
-    if conditions_met >= 2: result = True
+    print (condiciones_cumplidas)
+    if condiciones_cumplidas >= 2: 
+    	result = True
     return result
 
-print(validate_password(s))
+print(validadorPassword(s))
 
